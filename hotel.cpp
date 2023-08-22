@@ -5,10 +5,12 @@ using namespace std;
 
 class Hotel
 {
-public:
+
     int x[2][2]{{1, 2}, {3, 4}};
     map<long, string> xy{
         {1, "busy"}, {2, "free"}, {3, "free"}, {4, "busy"}};
+
+public:
     void get_status_of_room(int a)
     {
         if (xy.count(a) == 1)
